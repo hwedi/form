@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container container-left">
+      <form action="">
+        <h2>Without CSS</h2>
+
+        <div>
+          <label for="" placeholder="mohamed hwedi">Full Name</label>
+          <input type="text" placeholder="mohamed hwedi" />
+        </div>
+        <br />
+        <div>
+          <label for="">Password</label>
+          <input type="password" />
+        </div>
+        <br />
+        <div>
+          <label for="">Birthday</label>
+          <input type="date" />
+        </div>
+        <br />
+        <div>
+          <label for="">Gender:</label>
+          <input type="radio" name="sex" />Male
+          <input type="radio" name="sex" />Female
+        </div>
+        <br />
+        <div>
+          <label for="">Counter</label>
+          <select name="country" id="">
+            <option value="libya">libya</option>
+            <option value="tunisia">tunisia</option>
+            <option value="algeria">algeria</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="">Description</label>
+          <textarea name="description" id="" cols="30" rows="2"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="">File</label>
+          <input type="file" />
+        </div>
+        <br />
+        <div>
+          <label for="">Options</label>
+          <fieldset style="width: 30%; display: inline-block">
+            <legend>Main Selection</legend>
+            <div>
+              <input type="checkbox" />
+              HTML
+              <input type="checkbox" />
+              CSS
+            </div>
+            <div>
+              <input type="color" name="" id="" />
+              <input type="time" name="" id="" />
+              <input type="range" name="" id="" />
+            </div>
+          </fieldset>
+        </div>
+        <br />
+        <div>
+          <label for="">First</label>
+          <meter min="0" low="10" max="100" value="30"></meter>
+        </div>
+        <br />
+        <div>
+          <label for="">Second</label>
+          <progress value="50" max="100"></progress>
+        </div>
+        <button>Commit now</button>
+        <button>Leave</button>
+      </form>
+    </div>
+    <!-- with CSS -->
+    <div class="container container-right">
+      <h2>With CSS</h2>
+      <form id="with" action="">
+        <div class="form-item">
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-item">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="form-item">
+          <label for="birthday">Full name</label>
+          <input type="date" name="birthday" id="birthday" />
+        </div>
+        <div class="form-item">
+          <label for="gender">Gender</label>
+          <input type="radio" name="sex" id="male" checked />
+          <label for="male">Male</label>
+          <input type="radio" name="sex" id="female" />
+          <label for="female">Female</label>
+        </div>
+        <div class="form-item">
+          <label for="country">Country</label>
+          <select name="country" id="coutnry">
+            <option value="libya">libya</option>
+            <option value="tunisia">tunisia</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="20" rows="1">
+mohamed hwedi </textarea
+          >
+        </div>
+        <div class="form-item">
+          <label for="file">File</label>
+          <input type="file" name="file" id="file" />
+        </div>
+        <div class="form-item">
+          <fieldset>
+            <legend>Main Selector</legend>
+            <input type="checkbox" name="" id="html" />
+            HTML
+            <input type="checkbox" name="" id="" />
+            CSS
+            <input type="color" name="" id="" />
+            <input type="time" name="" id="" />
+            <input type="range" name="" id="" />
+          </fieldset>
+        </div>
+        <div class="form-item">
+          <label for="">First</label>
+          <meter value="30" max="100"></meter>
+        </div>
+        <div class="form-item">
+          <label for="">Second</label>
+          <progress value="50" max="100"></progress>
+        </div>
+        <div class="form-item buttons">
+          <button class="one">Commit Now</button>
+          <button class="two">Leave</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
